@@ -1,0 +1,52 @@
+/* SAP Fiori Inspired Aesthetic */
+:root {
+    --sap-blue: #0064d1;
+    --sap-slate: #1e293b;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+/* Glassmorphism for Modals */
+.backdrop-blur-sm {
+    backdrop-filter: blur(8px);
+}
+
+/* Card Hover Effects */
+.content-view section, .bg-white {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bg-white:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Pulsing for Running Jobs */
+@keyframes status-pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+.animate-pulse {
+    animation: status-pulse 1.5s infinite ease-in-out;
+}
+
+/* Navigation Active State */
+.nav-btn.active {
+    background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Audit Log Text Glow */
+#audit-log p {
+    text-shadow: 0 0 5px rgba(16, 185, 129, 0.2);
+}
